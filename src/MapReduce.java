@@ -83,6 +83,7 @@ public class MapReduce {
         approach3 = endTime - startTime;
 
         System.out.println("Time taken #3: " + approach3 + " (mS)");
+        System.out.println("Number of threads: " + numberThreadPools);
     }
 
     public interface MapCallback<E, V> {
