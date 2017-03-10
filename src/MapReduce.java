@@ -1,11 +1,18 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class MapReduce {
 
     public static void main(String[] args) {
-        //Map<String, String> input = extractTextFileContents(args[0]);
+        // Command line arguments
+        // String fileDirectory = args[0];
+        //int numberThreadPools = Integer.valueOf(args[1]);
+        int numberThreadPools = 10;
+
+        //Map<String, String> input = extractTextFileContents(fileDirectory);
         Map<String, String> input = extractTextFileContents("C://Software_Development/College/CT414/MapReduceAssignment/src/");
 
 
@@ -24,25 +31,17 @@ public class MapReduce {
                 }
             };
 
-            List<Thread> mapCluster = new ArrayList<>(input.size());
+            ExecutorService executor = Executors.newFixedThreadPool(numberThreadPools);
 
             for (Map.Entry<String, String> entry : input.entrySet()) {
                 final String file = entry.getKey();
                 final String contents = entry.getValue();
 
-                Thread t = new Thread(() -> map(file, contents, mapCallback));
-                mapCluster.add(t);
-                t.start();
+                executor.execute(() -> map(file, contents, mapCallback));
             }
 
-            // wait for mapping phase to be over:
-            for(Thread t : mapCluster) {
-                try {
-                    t.join();
-                } catch(InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+            executor.shutdown();
+            while (!executor.isTerminated()) {}
 
             // GROUP:
 
@@ -64,26 +63,17 @@ public class MapReduce {
                 }
             };
 
-            List<Thread> reduceCluster = new ArrayList<>(groupedItems.size());
+            executor = Executors.newFixedThreadPool(numberThreadPools);
 
             for (Map.Entry<String, List<String>> entry : groupedItems.entrySet()) {
                 final String word = entry.getKey();
                 final List<String> list = entry.getValue();
 
-                Thread t = new Thread(() -> reduce(word, list, reduceCallback));
-                reduceCluster.add(t);
-                t.start();
+                executor.execute(() -> reduce(word, list, reduceCallback));
             }
 
-            // wait for reducing phase to be over:
-            for(Thread t : reduceCluster) {
-                try {
-                    t.join();
-                } catch(InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }
-
+            executor.shutdown();
+            while (!executor.isTerminated()){}
             System.out.println(output);
         }
     }
