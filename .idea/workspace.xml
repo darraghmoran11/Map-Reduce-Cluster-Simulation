@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67beb33a-be69-4ed7-be5e-09b51d0cecff" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Part1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapReduce.java" afterPath="$PROJECT_DIR$/src/MapReduce.java" />
     </list>
     <ignored path="MapReduceAssignment.iws" />
@@ -29,8 +26,8 @@
       <file leaf-file-name="MapReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MapReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+            <state relative-caret-position="235">
+              <caret line="96" column="82" lean-forward="true" selection-start-line="96" selection-start-column="82" selection-end-line="96" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#943#944#0" expanded="true" />
@@ -38,11 +35,11 @@
                 <element signature="e#2452#2453#0" expanded="true" />
                 <element signature="e#2508#2509#0" expanded="true" />
                 <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
-                <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
-                <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
-                <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
-                <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
-                <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
+                <marker date="1489155001510" expanded="false" signature="6267:6282" ph=" { " />
+                <marker date="1489155001510" expanded="false" signature="6294:6304" ph=" }" />
+                <marker date="1489155001510" expanded="false" signature="6330:6345" ph=" { " />
+                <marker date="1489155001510" expanded="false" signature="6357:6367" ph=" }" />
+                <marker date="1489155001510" expanded="false" signature="6419:6434" ph=" { " />
               </folding>
             </state>
           </provider>
@@ -643,12 +640,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489093143071</updated>
-      <workItem from="1489142611183" duration="4895000" />
+      <workItem from="1489142611183" duration="5538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4895000" />
+    <option name="totallyTimeSpent" value="5538000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -757,11 +754,11 @@
             <element signature="e#2452#2453#0" expanded="true" />
             <element signature="e#2508#2509#0" expanded="true" />
             <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
-            <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
-            <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
-            <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
-            <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
-            <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6267:6282" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6294:6304" ph=" }" />
+            <marker date="1489155001510" expanded="false" signature="6330:6345" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6357:6367" ph=" }" />
+            <marker date="1489155001510" expanded="false" signature="6419:6434" ph=" { " />
           </folding>
         </state>
       </provider>
@@ -784,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+        <state relative-caret-position="235">
+          <caret line="96" column="82" lean-forward="true" selection-start-line="96" selection-start-column="82" selection-end-line="96" selection-end-column="82" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#943#944#0" expanded="true" />
@@ -793,11 +790,11 @@
             <element signature="e#2452#2453#0" expanded="true" />
             <element signature="e#2508#2509#0" expanded="true" />
             <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
-            <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
-            <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
-            <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
-            <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
-            <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6267:6282" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6294:6304" ph=" }" />
+            <marker date="1489155001510" expanded="false" signature="6330:6345" ph=" { " />
+            <marker date="1489155001510" expanded="false" signature="6357:6367" ph=" }" />
+            <marker date="1489155001510" expanded="false" signature="6419:6434" ph=" { " />
           </folding>
         </state>
       </provider>

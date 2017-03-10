@@ -90,8 +90,9 @@ public class MapReduce {
     private static void map(String file, String contents, MapCallback<String, MappedItem> callback) {
         String[] words = contents.trim().split("\\s+");
         List<MappedItem> results = new ArrayList<>(words.length);
+        // Map using first letter instead of entire word
         for(String word: words) {
-            // Map using first letter instead of entire word
+            // Check if the first character is a letter (i.e. not a special character such as !, $, &, (, ), +, etc)
             if (Character.isLetter(word.charAt(0))) {
                 String firstLetter = String.valueOf(word.charAt(0)).toUpperCase();
                 results.add(new MappedItem(firstLetter, file));
