@@ -11,11 +11,13 @@ public class MapReduce {
         // String fileDirectory = args[0];
         // int numberThreadPools = Integer.valueOf(args[1]);
         int numberThreadPools = 10;
+        long approach3;
 
         //Map<String, String> input = extractTextFileContents(fileDirectory);
         Map<String, String> input = extractTextFileContents("C://Software_Development/College/CT414/MapReduceAssignment/src/");
 
 
+        long startTime = System.currentTimeMillis();
         // APPROACH #3: Distributed MapReduce
         {
             final Map<String, Map<String, Integer>> output = new HashMap<>();
@@ -76,6 +78,11 @@ public class MapReduce {
             while (!executor.isTerminated()) {}
             System.out.println(output);
         }
+
+        long endTime = System.currentTimeMillis();
+        approach3 = endTime - startTime;
+
+        System.out.println("Time taken #3: " + approach3 + " (mS)");
     }
 
     public interface MapCallback<E, V> {
