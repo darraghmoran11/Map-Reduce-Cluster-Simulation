@@ -8,16 +8,11 @@ public class MapReduce {
 
     public static void main(String[] args) {
         // Command line arguments
-        // String fileDirectory = args[0];
-        // int numberThreadPools = Integer.valueOf(args[1]);
-        int numberThreadPools = 10;
-        long approach3;
+        String fileDirectory = args[0];
+        int numberThreadPools = Integer.valueOf(args[1]);
 
-        //Map<String, String> input = extractTextFileContents(fileDirectory);
-        Map<String, String> input = extractTextFileContents("C://Software_Development/College/CT414/MapReduceAssignment/src/");
+        Map<String, String> input = extractTextFileContents(fileDirectory);
 
-
-        long startTime = System.currentTimeMillis();
         // APPROACH #3: Distributed MapReduce
         {
             final Map<String, Map<String, Integer>> output = new HashMap<>();
@@ -32,18 +27,21 @@ public class MapReduce {
                 }
             };
 
+            // Set up ThreadPool
             ExecutorService executor = Executors.newFixedThreadPool(numberThreadPools);
 
             for (Map.Entry<String, String> entry : input.entrySet()) {
                 final String file = entry.getKey();
                 final String contents = entry.getValue();
 
+                // Execute map function on each thread
                 executor.execute(() -> map(file, contents, mapCallback));
             }
 
             executor.shutdown();
             while (!executor.isTerminated()) {}
             //////////////////////////////////////////////////////////////
+
 
             //////////////////////// GROUP ///////////////////////////////
             Map<String, List<String>> groupedItems = new HashMap<>();
@@ -56,8 +54,8 @@ public class MapReduce {
             }
             //////////////////////////////////////////////////////////////
 
-            // REDUCE:
 
+            ///////////////////////// REDUCE /////////////////////////////
             final ReduceCallback<String, String, Integer> reduceCallback = new ReduceCallback<String, String, Integer>() {
                 @Override
                 public synchronized void reduceDone(String k, Map<String, Integer> v) {
@@ -65,25 +63,23 @@ public class MapReduce {
                 }
             };
 
+            // Set up the ThreadPool
             executor = Executors.newFixedThreadPool(numberThreadPools);
 
             for (Map.Entry<String, List<String>> entry : groupedItems.entrySet()) {
                 final String word = entry.getKey();
                 final List<String> list = entry.getValue();
 
+                // Run the reduce function on each Thread
                 executor.execute(() -> reduce(word, list, reduceCallback));
             }
 
             executor.shutdown();
             while (!executor.isTerminated()) {}
+            //////////////////////////////////////////////////////////////
+
             System.out.println(output);
         }
-
-        long endTime = System.currentTimeMillis();
-        approach3 = endTime - startTime;
-
-        System.out.println("Time taken #3: " + approach3 + " (mS)");
-        System.out.println("Number of threads: " + numberThreadPools);
     }
 
     public interface MapCallback<E, V> {

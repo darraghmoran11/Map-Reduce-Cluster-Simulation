@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67beb33a-be69-4ed7-be5e-09b51d0cecff" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Part1.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Test.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MapReduce.java" afterPath="$PROJECT_DIR$/src/MapReduce.java" />
     </list>
     <ignored path="MapReduceAssignment.iws" />
@@ -23,38 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Part1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Part1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MapReduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MapReduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+            <state relative-caret-position="218">
+              <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1193#1194#0" expanded="true" />
-                <element signature="e#1260#1261#0" expanded="true" />
-                <element signature="e#2561#2562#0" expanded="true" />
-                <element signature="e#2617#2618#0" expanded="true" />
+                <element signature="e#943#944#0" expanded="true" />
+                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#2452#2453#0" expanded="true" />
+                <element signature="e#2508#2509#0" expanded="true" />
+                <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
+                <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
+                <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
+                <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
+                <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
+                <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="53" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -654,12 +643,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1489093143071</updated>
-      <workItem from="1489142611183" duration="2746000" />
+      <workItem from="1489142611183" duration="4895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2746000" />
+    <option name="totallyTimeSpent" value="4895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -674,7 +663,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -763,10 +752,16 @@
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#2561#2562#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
+            <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
+            <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
+            <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
+            <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
+            <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
           </folding>
         </state>
       </provider>
@@ -789,14 +784,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapReduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="97" column="16" lean-forward="false" selection-start-line="97" selection-start-column="16" selection-end-line="97" selection-end-column="16" />
+        <state relative-caret-position="218">
+          <caret line="13" column="75" lean-forward="false" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1193#1194#0" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#2561#2562#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2508#2509#0" expanded="true" />
+            <element signature="class#MappedItem#0;class#MapReduce#0" expanded="false" />
+            <marker date="1489154353197" expanded="false" signature="6154:6169" ph=" { " />
+            <marker date="1489154353197" expanded="false" signature="6181:6191" ph=" }" />
+            <marker date="1489154353197" expanded="false" signature="6217:6232" ph=" { " />
+            <marker date="1489154353197" expanded="false" signature="6244:6254" ph=" }" />
+            <marker date="1489154353197" expanded="false" signature="6306:6321" ph=" { " />
           </folding>
         </state>
       </provider>
