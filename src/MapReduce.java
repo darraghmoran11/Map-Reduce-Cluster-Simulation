@@ -9,7 +9,7 @@ public class MapReduce {
     public static void main(String[] args) {
         // Command line arguments
         // String fileDirectory = args[0];
-        //int numberThreadPools = Integer.valueOf(args[1]);
+        // int numberThreadPools = Integer.valueOf(args[1]);
         int numberThreadPools = 10;
 
         //Map<String, String> input = extractTextFileContents(fileDirectory);
@@ -20,8 +20,7 @@ public class MapReduce {
         {
             final Map<String, Map<String, Integer>> output = new HashMap<>();
 
-            // MAP:
-
+            //////////////////////////// MAP /////////////////////////////
             final List<MappedItem> mappedItems = new LinkedList<>();
 
             final MapCallback<String, MappedItem> mapCallback = new MapCallback<String, MappedItem>() {
@@ -42,9 +41,9 @@ public class MapReduce {
 
             executor.shutdown();
             while (!executor.isTerminated()) {}
+            //////////////////////////////////////////////////////////////
 
-            // GROUP:
-
+            //////////////////////// GROUP ///////////////////////////////
             Map<String, List<String>> groupedItems = new HashMap<>();
 
             for (MappedItem item : mappedItems) {
@@ -53,6 +52,7 @@ public class MapReduce {
                 List<String> list = groupedItems.computeIfAbsent(word, k -> new LinkedList<>());
                 list.add(file);
             }
+            //////////////////////////////////////////////////////////////
 
             // REDUCE:
 
@@ -73,7 +73,7 @@ public class MapReduce {
             }
 
             executor.shutdown();
-            while (!executor.isTerminated()){}
+            while (!executor.isTerminated()) {}
             System.out.println(output);
         }
     }
