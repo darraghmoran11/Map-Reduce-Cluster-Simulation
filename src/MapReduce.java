@@ -120,7 +120,7 @@ public class MapReduce {
     }
 
     // Method: Used to extract the contents of all the text files in a directory
-    private static HashMap<String, String> extractTextFileContents(String fileDirectory){
+    private static HashMap<String, String> extractTextFileContents(String fileDirectory) {
         HashMap<String, String> textFileContents = new HashMap<>();
 
         // Get list of files in the file directory
